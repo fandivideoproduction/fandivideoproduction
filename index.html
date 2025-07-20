@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fandi Video Production</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 50%;
+      font-size: 24px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Hero Section -->
+  <header class="bg-black text-white py-16 px-4 text-center">
+    <h1 class="text-4xl font-bold mb-4">Fandi Video Production</h1>
+    <p class="text-lg mb-6">Spesialis Dokumentasi & Produksi Video Cinematic</p>
+    <a href="#video" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl">Lihat Video</a>
+  </header>
+
+  <!-- Video Showcase Section -->
+  <section class="py-12 px-4 md:px-20" id="video">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Video Showcase</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe class="w-full h-64 rounded-xl" src="https://www.youtube.com/embed/9EI6tqEmyDM" title="Video 1" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe class="w-full h-64 rounded-xl" src="https://www.youtube.com/embed/RJ9N1LdgkI4" title="Video 2" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe class="w-full h-64 rounded-xl" src="https://www.youtube.com/embed/ndWINhNK0rE" title="Video 3" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri TikTok Section -->
+  <section class="py-12 px-4 md:px-20 bg-gray-800 text-white" id="tiktok">
+    <h2 class="text-2xl font-semibold mb-4">Galeri TikTok</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@fandivideo/video/7280180259329324293" data-video-id="7280180259329324293" style="max-width: 400px;min-width: 325px;"></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@fandivideo/video/7280297458387623169" data-video-id="7280297458387623169" style="max-width: 400px;min-width: 325px;"></blockquote>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@fandivideo" data-unique-id="fandivideo" style="max-width: 400px;min-width: 325px;">
+        <section> <a target="_blank" title="@fandivideo" href="https://www.tiktok.com/@fandivideo">@fandivideo</a></section>
+      </blockquote>
+    </div>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+  </section>
+
+  <!-- Formulir Booking -->
+  <section class="py-12 px-4 md:px-20" id="formulir">
+    <h2 class="text-2xl font-semibold mb-4">Formulir Booking</h2>
+    <form action="https://formspree.io/f/xwkgzjvj" method="POST" class="grid gap-4 max-w-xl mx-auto">
+      <input type="text" name="nama" placeholder="Nama Lengkap" class="p-3 rounded bg-gray-700 text-white" required>
+      <input type="email" name="email" placeholder="Email" class="p-3 rounded bg-gray-700 text-white" required>
+      <textarea name="pesan" placeholder="Pesan / Jenis layanan" rows="4" class="p-3 rounded bg-gray-700 text-white" required></textarea>
+      <button type="submit" class="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-xl text-white">Kirim</button>
+    </form>
+  </section>
+
+  <!-- Kontak Section -->
+  <section class="py-12 px-4 md:px-20 bg-gray-800 text-white" id="kontak">
+    <h2 class="text-2xl font-semibold mb-4">Kontak Kami</h2>
+    <p class="mb-2">📱 WhatsApp: <a href="https://wa.me/6281233826658?text=Halo%20saya%20ingin%20booking%20jasa%20video" class="text-blue-400 underline">0812-3382-6658</a></p>
+    <p class="mb-2">📧 Email: mfandi805@gmail.com</p>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/6281233826658?text=Halo%20saya%20ingin%20booking%20jasa%20video" class="whatsapp-button" title="Hubungi via WhatsApp">💬</a>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-6">
+    &copy; 2025 Fandi Video Production. All rights reserved.
+  </footer>
+
+</body>
+</html>
